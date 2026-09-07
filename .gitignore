@@ -1,0 +1,43 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# Eclipse
+.metadata/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment / secrets
+.env
+.env.*
+*.env
+
+# Local configuration
+application-local.properties
+application-dev.properties
+
+# Temporary files
+*.tmp
+*.temp
+
+# Java
+*.class
+
+# Security / credentials
+*.pem
+*.key
+*.crt
