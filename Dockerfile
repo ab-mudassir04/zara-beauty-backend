@@ -33,8 +33,8 @@ WORKDIR /app
 # Copy generated JAR
 COPY --from=build /app/target/backend-0.0.1-SNAPSHOT.jar app.jar
 
-# Spring Boot port
-EXPOSE 8080
+# Render uses PORT at runtime
+EXPOSE 10000
 
 # Start application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-XX:MaxRAMPercentage=75.0", "-XX:+UseSerialGC", "-jar", "app.jar"]
